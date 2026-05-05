@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "questions": 200,
+    "dataset": "2WikiMultihopQA"
+  },
+  "aggregate": {
+    "BFS": {
+      "algorithm": "BFS",
+      "questions": 200,
+      "precision_at_10": 0.14717063492063492,
+      "recall_at_10": 0.6025,
+      "f1_at_10": 0.2328946608946609,
+      "ndcg_at_10": 0.39156846355772557,
+      "mrr": 0.36434920634920637,
+      "mean_latency_ms": 67.93220204492172,
+      "median_latency_ms": 54.07918500168307,
+      "mean_nodes_explored": 21925.28
+    },
+    "DFS": {
+      "algorithm": "DFS",
+      "questions": 200,
+      "precision_at_10": 0.14800992063492063,
+      "recall_at_10": 0.61125,
+      "f1_at_10": 0.23460894660894663,
+      "ndcg_at_10": 0.3875645307137706,
+      "mrr": 0.3524563492063492,
+      "mean_latency_ms": 178.95316162997915,
+      "median_latency_ms": 149.57720650090778,
+      "mean_nodes_explored": 19628.32
+    },
+    "Dijkstra": {
+      "algorithm": "Dijkstra",
+      "questions": 200,
+      "precision_at_10": 0.15638293650793653,
+      "recall_at_10": 0.64125,
+      "f1_at_10": 0.24754112554112556,
+      "ndcg_at_10": 0.4159909826111953,
+      "mrr": 0.39038492063492064,
+      "mean_latency_ms": 1162.9335858850209,
+      "median_latency_ms": 1200.203390999377,
+      "mean_nodes_explored": 45392.475
+    },
+    "PPR": {
+      "algorithm": "PPR",
+      "questions": 200,
+      "precision_at_10": 0.1275,
+      "recall_at_10": 0.52,
+      "f1_at_10": 0.20130952380952383,
+      "ndcg_at_10": 0.3484878898039914,
+      "mrr": 0.3425337301587302,
+      "mean_latency_ms": 1296.9456234851168,
+      "median_latency_ms": 1269.4213895010762,
+      "mean_nodes_explored": 54943
+    },
+    "SemanticBeam": {
+      "algorithm": "SemanticBeam",
+      "questions": 200,
+      "precision_at_10": 0.019146825396825398,
+      "recall_at_10": 0.08,
+      "f1_at_10": 0.03081818181818182,
+      "ndcg_at_10": 0.04805231941890017,
+      "mrr": 0.042317460317460316,
+      "mean_latency_ms": 29.694580095219862,
+      "median_latency_ms": 20.28030250039592,
+      "mean_nodes_explored": 2961.545
+    },
+    "PST": {
+      "algorithm": "PST",
+      "questions": 200,
+      "precision_at_10": 0.027904761904761904,
+      "recall_at_10": 0.11875,
+      "f1_at_10": 0.044772005772005775,
+      "ndcg_at_10": 0.06491665229587466,
+      "mrr": 0.06256746031746031,
+      "mean_latency_ms": 14.264752760154806,
+      "median_latency_ms": 5.769052499090321,
+      "mean_nodes_explored": 5657.11
+    }
+  }
+}
