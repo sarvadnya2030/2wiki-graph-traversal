@@ -52,10 +52,10 @@ def load_data():
     return graph, questions
 
 @st.cache_data
-def get_graph_layout(graph, seed=42):
+def get_graph_layout(_graph, seed=42):
     """Compute graph layout."""
     np.random.seed(seed)
-    return nx.spring_layout(graph, k=0.5, iterations=20, seed=seed)
+    return nx.spring_layout(_graph, k=0.5, iterations=20, seed=seed)
 
 graph, questions = load_data()
 layout = get_graph_layout(graph)
